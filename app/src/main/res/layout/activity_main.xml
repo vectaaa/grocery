@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="3dp"
+    android:background="#f2f2f2"
+    tools:context=".MainActivity">
+<com.denzcoskun.imageslider.ImageSlider
+    android:id="@+id/slider"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:layout_marginTop="16dp"
+    app:auto_cycle="true"
+    app:error_image="@drawable/bg_grey"
+    app:placeholder="@drawable/bg_grey"
+    app:delay="0"
+    app:period="1000"
+    app:corner_radius="20"/>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="250dp">
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+</RelativeLayout>
+    <Button
+        android:id="@+id/btnList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="ADD TO LIST"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
